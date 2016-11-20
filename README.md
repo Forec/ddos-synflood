@@ -2,7 +2,8 @@
 > This project is a simple DDos attack tool based on SYN flood. Written in C++, using libnet. I wrote a tutorial at [http://blog.forec.cn/2016/11/20/ddos-syn-attack/](http://blog.forec.cn/2016/11/20/ddos-syn-attack/).
 
 # Platform
-* The code is written under Windows 10, in VS Ultimate 2013, version `12.0.21005.1 REL`.
+* The code is written under Windows 10, in VS Ultimate 2013, version `12.0.21005.1 REL`. 
+* [中文版安装指南看这里](http://blog.forec.cn/2016/11/20/ddos-syn-attack/)
 * To configure the libnet package, you need to download its newest source code from [here](https://github.com/sam-github/libnet/tree/master/libnet), and then install `WinPcap` by this [installer](http://www.winpcap.org/install/bin/WinPcap_4_1_3.exe). After that, download `WpdPack` source code from this [link](http://www.winpcap.org/install/bin/WpdPack_4_1_2.zip). Unzip the libnet and wpdpack compressed package.
 * Assume that you unzip libnet's package to `E:\libnet-1.2-rc3`, unzip wpdpack's package to `E:\WpdPack`. There's a folder `win32` in `E:\libnet-1.2-rc3\libnet`. You need to build a visual studio project, using the codes in that folder. 
 * Configure the project: there're two folders named `include` in `E:\libnet-1.2-rc3\libnet` and `E:\WpdPack`, here it should be `E:\libnet-1.2-rc3\libnet\include` and `E:\WpdPack\include`. Add the two paths into the `Include` path of the project (in project settings, choose VC++ path, and you will see this option).
